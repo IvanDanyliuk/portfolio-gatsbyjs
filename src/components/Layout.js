@@ -7,6 +7,7 @@ import {
   navLinkItem,
   navLinkText
 } from './layout.module.css'
+
 const Layout = ({ pageTitle, children }) => {
   return (
     <main className={container}>
