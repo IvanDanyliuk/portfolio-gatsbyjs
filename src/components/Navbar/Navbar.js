@@ -90,7 +90,7 @@ const MenuBtn = styled.div`
 
 const Menu = styled.ul`
     display: flex;
-    height: 100%;
+    height: 90vh;
     justify-content: flex-end;
     align-items: center;
     box-sizing: border-box;

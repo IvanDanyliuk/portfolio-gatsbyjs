@@ -22,7 +22,8 @@ export default Layout;
 
 const Header = styled.header`
   position: relative;
-  padding: 0 10px;
+  margin: 0;
+  padding: 0 20px;
   width: 100%;
   font-family: 'Montserrat';
   box-sizing: border-box;
@@ -30,7 +31,8 @@ const Header = styled.header`
 `;
 const MainContent = styled.main`
   position: relative;
-  padding: 0 10px;
+  margin: 0;
+  padding: 0 20px;
   width: 100%;
   font-family: 'Montserrat';
   box-sizing: border-box;

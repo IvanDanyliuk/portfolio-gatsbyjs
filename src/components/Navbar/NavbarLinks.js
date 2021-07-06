@@ -15,9 +15,10 @@ const NavbarLinks = () => {
 
 
 const NavLink = styled.li`
-    padding: 20px 10px;
+    padding: 0 10px;
     font-size: 16px;
     list-style: none;
+    box-sizing: border-box;
     a {
         text-decoration: none;
         color: rgb(0, 0, 0);
@@ -29,6 +30,7 @@ const NavLink = styled.li`
     }
 
     @media (max-width: 768px) {
+        padding: 20px 10px;
         font-size: 26px;
     }
 `;
