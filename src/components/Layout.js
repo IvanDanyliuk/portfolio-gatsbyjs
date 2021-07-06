@@ -1,50 +1,37 @@
-import * as React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
-import {
-  container,
-  heading,
-  navLinks,
-  navLinkItem,
-  navLinkText,
-  siteTitle
-} from './layout.module.css'
+import * as React from 'react';
+import styled from 'styled-components';
+import Navbar from './Navbar/Navbar';
+import '@fontsource/montserrat'
 
-const Layout = ({ pageTitle, children }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+
+const Layout = ({ children }) => {
   return (
-    <main className={container}>
-      <title>{pageTitle}  | {data.site.siteMetadata.title}</title>
-      <p className={siteTitle}>{data.site.siteMetadata.title}</p>
-      <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
-              Home
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
-              About
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/projects" className={navLinkText}>
-              About
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <h1 className={heading}>{pageTitle}</h1>
-      {children}
-    </main>
+    <>
+      <Header>
+        <Navbar />
+      </Header>
+      <MainContent>
+        {children}
+      </MainContent>
+    </>
   )
-}
-export default Layout
+};
+
+export default Layout;
+
+
+const Header = styled.header`
+  position: relative;
+  padding: 0 10px;
+  width: 100%;
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+  overflow: hidden;
+`;
+const MainContent = styled.main`
+  position: relative;
+  padding: 0 10px;
+  width: 100%;
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+`;
