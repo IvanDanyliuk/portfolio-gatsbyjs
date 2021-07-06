@@ -22,3 +22,8 @@
     color: black;
 }
 
+.siteTitle {
+    font-size: 3rem;
+    color: gray;
+    font-weight: 700;
+  }
