@@ -36,6 +36,10 @@ const MainPage = styled.section`
     display: flex;
     box-sizing: border-box;
     overflow: hidden;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 `;
 
 const Introduction = styled.div`
@@ -59,7 +63,14 @@ const Introduction = styled.div`
         color: rgb(141, 145, 141);
     }
 
-    
+    @media (max-width: 768px) {
+        width: 100%;
+        align-items: center;
+
+        h1, h2 {
+            text-align: center;
+        }
+    }
 `;
 
 const Cta = styled.div`
@@ -69,17 +80,33 @@ const Cta = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     ::before {
         content: '';
         position: absolute;
+        right: 100%;
         width: 2px;
         height: 80%;
         background: rgb(0, 0, 0);
+
+        @media (max-width: 768px) {
+            top: 0;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            width: 80%;
+            height: 2px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
     }
 `;
 
 const BtnGroup = styled.div`
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
 
