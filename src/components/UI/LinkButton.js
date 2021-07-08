@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const LinkButton = props => <LinkBody
                                 href={props.href}
-                                target={'_blank'}
+                                target={props.target}
                             >
                                 {props.title}
                             </LinkBody>;
@@ -12,7 +12,7 @@ const LinkButton = props => <LinkBody
 
 const LinkBody = styled.a`
     padding: 5px;
-    width: 30%;
+    width: 28%;
     display: inline-block;
     font-size: 12px;
     text-align: center;

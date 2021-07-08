@@ -28,7 +28,6 @@ const SkillsBody = styled.ul`
     color: rgb(141, 145, 141);
 
     li {
-        
         svg {
             padding: 5px;
             font-size: 30px;
@@ -39,7 +38,13 @@ const SkillsBody = styled.ul`
         }
     }
 
-    
+    @media (max-width: 768px) {
+        li {
+            svg {
+                font-size: 26px;
+            }
+        }
+    }
 `;
 
 

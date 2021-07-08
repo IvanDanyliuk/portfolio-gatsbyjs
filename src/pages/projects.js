@@ -25,9 +25,9 @@ const Projects = ({data}) => {
 								<p>{project.node.frontmatter.stack}</p>
 							</ProjectDescription>
 							<Links>
-								<LinkButton href={project.node.frontmatter.deployLink} title={'Watch live'} />
-								<LinkButton href={project.node.frontmatter.deployLink} title={'See the code'} />
-								<LinkButton href={'www.google.com.ua'} title={'More...'} />
+								<LinkButton href={project.node.frontmatter.deployLink} title={'Watch live'} target={'_blank'} />
+								<LinkButton href={project.node.frontmatter.deployLink} title={'See the code'} target={'_blank'} />
+								<LinkButton href={project.node.frontmatter.slug} title={'More...'} target={'_self'} />
 							</Links>
 						</ProjectItem>
 					)

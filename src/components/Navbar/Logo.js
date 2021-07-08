@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import '@fontsource/montserrat/800.css';
+import '@fontsource/montserrat/700.css';
 
 
 const Logo = () => {
@@ -12,10 +12,9 @@ const Logo = () => {
 
 const LogoBody = styled.div`
     font-family: 'Montserrat';
-    color: red;
+    color: rgb(0, 0, 0);
     span {
-        font-weight: 800;
-        color: rgb(0, 0, 0);
+        font-weight: 700;
     }
 `;
 
