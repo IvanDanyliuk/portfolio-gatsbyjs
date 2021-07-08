@@ -35,7 +35,6 @@ const MainPage = styled.section`
     height: 90vh;
     display: flex;
     box-sizing: border-box;
-    overflow: hidden;
 
     @media (max-width: 768px) {
         flex-direction: column;
