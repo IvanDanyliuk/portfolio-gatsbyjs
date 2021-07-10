@@ -7,7 +7,6 @@ import Button from '../components/UI/Button';
 
 
 const IndexPage = () => {
-    
     return (
         <Layout pageTitle="Home Page">
             <MainPage>
@@ -35,6 +34,7 @@ const MainPage = styled.section`
     height: 90vh;
     display: flex;
     box-sizing: border-box;
+    background: rgb(255, 255, 255);
 
     @media (max-width: 768px) {
         flex-direction: column;
@@ -48,8 +48,10 @@ const Introduction = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     h1 {
         margin: 0 0 10px 0;
+        padding: 0;
         font-size: 58px;
         font-weight: 400;
         span {
@@ -58,6 +60,7 @@ const Introduction = styled.div`
     }
     h2 {
         margin: 0 0 30px 0;
+        padding: 0;
         font-weight: 400;
         color: rgb(141, 145, 141);
     }
@@ -68,6 +71,9 @@ const Introduction = styled.div`
 
         h1, h2 {
             text-align: center;
+        }
+        h1 {
+            font-size: 46px;
         }
     }
 `;
@@ -100,6 +106,7 @@ const Cta = styled.div`
     }
 
     @media (max-width: 768px) {
+        padding-top: 30px;
         width: 100%;
     }
 `;

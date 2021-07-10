@@ -13,3 +13,4 @@ mobileImg: "portfolio-gatsby-mobile.jpg"
 <b>Things I got familiar with:</b>
 <div>GatsbyJS</div>
 <div>GraphQL</div>
+<div>Styled Components</div>

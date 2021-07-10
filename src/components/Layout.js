@@ -31,6 +31,7 @@ const MainContent = styled.main`
     margin: 0;
     padding: 0 20px;
     width: 100%;
+    min-height: 90vh;
     font-family: "Montserrat";
     box-sizing: border-box;
 	background: rgb(255, 255, 255);

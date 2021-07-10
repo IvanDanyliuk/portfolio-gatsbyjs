@@ -8,7 +8,7 @@ import LinkButton from "../components/UI/LinkButton";
 
 const Projects = ({data}) => {
     return (
-        <Layout pageTitle="My Blog Posts">
+        <Layout pageTitle="My Projects">
             <PageTitle>My projects</PageTitle>
             <ProjectsList>
                 {data.allMarkdownRemark.edges.map((project, index) => {
@@ -26,7 +26,7 @@ const Projects = ({data}) => {
 							</ProjectDescription>
 							<Links>
 								<LinkButton href={project.node.frontmatter.deployLink} title={'Watch live'} target={'_blank'} />
-								<LinkButton href={project.node.frontmatter.deployLink} title={'See the code'} target={'_blank'} />
+								<LinkButton href={project.node.frontmatter.githubLink} title={'See the code'} target={'_blank'} />
 								<LinkButton href={project.node.frontmatter.slug} title={'More...'} target={'_self'} />
 							</Links>
 						</ProjectItem>
@@ -64,8 +64,9 @@ export const data = graphql`
 `;
 
 
-const PageTitle = styled.h2`
+const PageTitle = styled.h3`
 	margin: 10px 0 20px 0;
+	font-size: 26px;
 `;
 
 const ProjectsList = styled.ul`

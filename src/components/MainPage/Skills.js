@@ -9,10 +9,11 @@ import { FaReact } from "@react-icons/all-files/fa/FaReact";
 import { SiRedux } from "@react-icons/all-files/si/SiRedux";
 import { SiFirebase } from "@react-icons/all-files/si/SiFirebase";
 import { SiGatsby } from "@react-icons/all-files/si/SiGatsby";
+import {FaBootstrap} from '@react-icons/all-files/fa/FaBootstrap';
 
 
 const Skills = () => {
-    const skills = [<ImHtmlFive />, <IoLogoCss3 />, <SiJavascript />, <FaSass />, <FaGit />, <FaReact />, <SiRedux />, <SiFirebase />, <SiGatsby />];
+    const skills = [<ImHtmlFive />, <IoLogoCss3 />, <SiJavascript />, <FaSass />, <FaBootstrap />, <FaGit />, <FaReact />, <SiRedux />, <SiFirebase />, <SiGatsby />];
     return (
         <SkillsBody>
             {skills.map((skill, index) => <li key={index}>{skill}</li>)}
@@ -22,14 +23,17 @@ const Skills = () => {
 
 
 const SkillsBody = styled.ul`
+    position: relative;
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     color: rgb(141, 145, 141);
 
     li {
         svg {
-            padding: 5px;
+            padding: 10px;
             font-size: 30px;
         }
         &:hover {
@@ -39,9 +43,13 @@ const SkillsBody = styled.ul`
     }
 
     @media (max-width: 768px) {
+        margin-bottom: 20px;
+        justify-content: center;
+        
         li {
             svg {
-                font-size: 26px;
+                padding: 5px 10px;
+                font-size: 28px;
             }
         }
     }
