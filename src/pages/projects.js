@@ -78,8 +78,9 @@ const ProjectsList = styled.ul`
 
 const ProjectItem = styled.li`
 	position: relative;
-	margin-right: 10px;
+	margin: 0 10px 0 0;
 	width: 30%;
+	border: 1px solid rgb(233, 236, 239);
 	border-radius: 3px;
 	background: rgb(233, 236, 239);
 	overflow: hidden;
@@ -89,7 +90,7 @@ const ProjectItem = styled.li`
 	}
 
 	@media (max-width: 768px) {
-		margin-bottom: 20px;
+		margin: 0 0 26px 0;
 		width: 100%;
 	}
 `;

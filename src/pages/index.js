@@ -5,7 +5,7 @@ import Skills from "../components/MainPage/Skills";
 import SocialMediaList from "../components/MainPage/SocialMediaList";
 import CommonLinkButton from "../components/UI/CommonLinkButton";
 import DownloadButton from "../components/UI/DownloadButton";
-import CV from '../content/CV.pdf';
+import CV from '../content/Ivan_Danyliuk_CV.pdf';
 
 
 const IndexPage = () => {
