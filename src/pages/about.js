@@ -10,7 +10,6 @@ const AboutPage = ({data}) => {
 	const {html, frontmatter} = data.allMarkdownRemark.edges[0].node;
 	const image = getImage(frontmatter.photo.childImageSharp.gatsbyImageData);
 
-	console.log(frontmatter)
     return (
         <Layout pageTitle="About Me">
             <AboutBody>
