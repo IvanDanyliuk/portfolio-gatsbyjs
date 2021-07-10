@@ -3,7 +3,9 @@ import styled from "styled-components";
 import Layout from "../components/Layout";
 import Skills from "../components/MainPage/Skills";
 import SocialMediaList from "../components/MainPage/SocialMediaList";
-import Button from '../components/UI/Button';
+import CommonLinkButton from "../components/UI/CommonLinkButton";
+import DownloadButton from "../components/UI/DownloadButton";
+import CV from '../content/CV.pdf';
 
 
 const IndexPage = () => {
@@ -18,8 +20,8 @@ const IndexPage = () => {
                 <Cta>
                     <SocialMediaList />
                     <BtnGroup>
-                        <Button title={'See my projects'} onClick={() => alert('Yo!')} />
-                        <Button title={'Download CV'} onClick={() => alert('Yo!')} />
+                        <CommonLinkButton to={'/projects'} title={'See my projects'} />
+                        <DownloadButton href={CV} title={'Download CV'} />
                     </BtnGroup>
                 </Cta>
             </MainPage>
@@ -66,6 +68,7 @@ const Introduction = styled.div`
     }
 
     @media (max-width: 768px) {
+        margin-top: 20px;
         width: 100%;
         align-items: center;
 
@@ -73,7 +76,10 @@ const Introduction = styled.div`
             text-align: center;
         }
         h1 {
-            font-size: 46px;
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 20px;
         }
     }
 `;
@@ -116,7 +122,7 @@ const BtnGroup = styled.div`
     display: flex;
     flex-direction: column;
 
-    button {
+    a {
         margin: 10px;
     }
 `;

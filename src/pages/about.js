@@ -98,10 +98,6 @@ const IntroTitle = styled.p`
 	font-size: 24px;
 `;
 
-const AboutText = styled.p`
-	margin-top: 10px;
-`;
-
 const PortraitContainer = styled.div`
 	position: relative;
 	width: 20%;
