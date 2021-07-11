@@ -26,6 +26,7 @@ const Header = styled.header`
     overflow: hidden;
 	background: rgb(255, 255, 255);
 `;
+
 const MainContent = styled.main`
     position: relative;
     margin: 0;

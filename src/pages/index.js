@@ -13,9 +13,9 @@ const IndexPage = () => {
         <Layout pageTitle="Home Page">
             <MainPage>
                 <Introduction>
-                      <h1>Hi, I am <span>Ivan Danyliuk</span>!</h1>
-                      <h2>I am a frontend developer based in Ukraine</h2>
-                      <Skills />
+                    <h1>Hi, I am <span>Ivan Danyliuk</span>!</h1>
+                    <h2>I am a frontend developer based in Ukraine</h2>
+                    <Skills />
                 </Introduction>
                 <Cta>
                     <SocialMediaList />

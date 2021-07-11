@@ -36,9 +36,7 @@ const SocialMedia = styled.ul`
     position: relative;
     margin: 0;
     padding: 0;
-    width: 100%;
     display: flex;
-    justify-content: center;
     box-sizing: border-box;
 
     @media (max-width: 768px) {
