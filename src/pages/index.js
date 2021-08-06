@@ -50,6 +50,7 @@ const Introduction = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     h1 {
         margin: 0 0 10px 0;
@@ -71,10 +72,7 @@ const Introduction = styled.div`
         margin-top: 20px;
         width: 100%;
         align-items: center;
-
-        h1, h2 {
-            text-align: center;
-        }
+        
         h1 {
             font-size: 36px;
         }

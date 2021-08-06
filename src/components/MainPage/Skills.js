@@ -28,6 +28,7 @@ const SkillsBody = styled.ul`
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     color: rgb(141, 145, 141);
 
@@ -44,7 +45,6 @@ const SkillsBody = styled.ul`
 
     @media (max-width: 768px) {
         margin-bottom: 20px;
-        justify-content: center;
         
         li {
             svg {
