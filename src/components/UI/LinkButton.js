@@ -29,7 +29,8 @@ const LinkBody = styled.a`
     }
 
     @media (max-width: 768px) {
-        padding: 10px 5px;
+        padding: 15px 5px;
+        width: 30%;
     }
 `;
 
