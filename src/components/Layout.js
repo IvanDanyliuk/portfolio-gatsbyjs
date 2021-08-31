@@ -24,7 +24,7 @@ const Header = styled.header`
     font-family: "Montserrat";
     box-sizing: border-box;
     overflow: hidden;
-	background: rgb(255, 255, 255);
+	background: rgb(36, 36, 36);
 `;
 
 const MainContent = styled.main`
@@ -36,6 +36,7 @@ const MainContent = styled.main`
     font-family: "Montserrat";
     box-sizing: border-box;
 	background: rgb(255, 255, 255);
+    overflow: hidden;
 `;
 
 

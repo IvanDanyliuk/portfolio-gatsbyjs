@@ -75,9 +75,12 @@ const Introduction = styled.div`
         
         h1 {
             font-size: 36px;
+            text-align: center;
         }
         h2 {
+            margin-bottom: 30px;
             font-size: 20px;
+            text-align: center;
         }
     }
 `;
@@ -110,7 +113,6 @@ const Cta = styled.div`
     }
 
     @media (max-width: 768px) {
-        padding-top: 30px;
         width: 100%;
     }
 `;

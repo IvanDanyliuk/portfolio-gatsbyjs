@@ -74,15 +74,16 @@ const ProjectsList = styled.ul`
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 `;
 
 const ProjectItem = styled.li`
 	position: relative;
 	margin: 0 10px 0 0;
-	width: 30%;
+	width: 32%;
 	border: 1px solid rgb(233, 236, 239);
 	border-radius: 3px;
-	background: rgb(233, 236, 239);
+	background: rgb(255, 255, 255);
 	overflow: hidden;
 
 	&:last-child {
@@ -96,7 +97,7 @@ const ProjectItem = styled.li`
 `;
 
 const ProjectImg = styled(GatsbyImage)`
-	
+	margin: 10px;
 `;
 
 const ProjectDescription = styled.div`

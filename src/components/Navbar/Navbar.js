@@ -37,7 +37,7 @@ const NavbarBody = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgb(255, 255, 255);
+    background: rgb(36, 36, 36);
     z-index: 5;
 
     @media (max-width: 768px) {
@@ -74,7 +74,7 @@ const MenuBtn = styled.div`
         position: absolute;
         width: 30px;
         height: 3px;
-        background: rgb(0, 0, 0);
+        background: rgb(255, 255, 255);
         transition: all .3s linear;
     }
     ::before {

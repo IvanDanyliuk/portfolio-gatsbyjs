@@ -56,6 +56,7 @@ const ContactBody = styled.section`
     width: 100%;
     min-height: 90vh;
     display: flex;
+    box-sizing: border-box;
 
     @media (max-width: 768px) {
         flex-direction: column;

@@ -12,7 +12,7 @@ const Logo = () => {
 
 const LogoBody = styled.div`
     font-family: 'Montserrat';
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     span {
         font-weight: 700;
     }

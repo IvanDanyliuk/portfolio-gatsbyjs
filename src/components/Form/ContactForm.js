@@ -86,6 +86,7 @@ const ContactFormBody = styled.form`
 
         textarea {
             margin-bottom: 20px;
+            padding: 5px 10px;
             height: 20vh;
         }
 
@@ -94,7 +95,7 @@ const ContactFormBody = styled.form`
             width: 180px;
             height: 40px;
             border: 2px solid rgb(0, 0, 0);
-            border-radius: 20px;
+            border-radius: 5px;
             font-size: 16px;
             text-align: center;
             letter-spacing: 1px;
