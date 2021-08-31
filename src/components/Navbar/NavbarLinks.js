@@ -62,6 +62,14 @@ const NavLink = styled.li`
 	        transition-delay: .35s;
         }
     }
+
+    @media (max-width: 768px) {
+        margin: 30px 0;
+        a {
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+    }
 `;
 
 

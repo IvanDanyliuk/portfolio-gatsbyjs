@@ -96,11 +96,12 @@ const Menu = styled.ul`
     box-sizing: border-box;
 
     @media (max-width: 768px) {
-        flex-direction: column;
         position: fixed;
         width: 100%;
+        flex-direction: column;
         justify-content: center;
         background: rgb(255, 255, 255);
+        
         transition: all .3s ease-in;
         top: 10vh;
         left: ${props => (props.open ? '-100%' : '0')};
